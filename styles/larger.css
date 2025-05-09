@@ -1,0 +1,21 @@
+:root {
+    --primary-color: rgb(142, 73, 210);
+    --secondary-color: rgb(21, 19, 13);
+    --accent-color1: rgb(70, 80, 127);
+    --accent-color2: gray;
+}
+
+.top {
+    
+    background-color: var(--primary-color);
+    color: white;
+    font-size:3.5rem;
+    text-align: center;
+    
+}
+
+.top img {
+    padding:  13px 10px 0 0;
+    
+}
+
