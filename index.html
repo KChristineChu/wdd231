@@ -7,55 +7,65 @@
     <title> WDD 231 - Web Frontend Development - Christine Chu</title>
     <meta name="description" content="WDD 231 - Web Frontend Development, Christine Chu">
     <meta name="author" content="Christine Chu">
-
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
-    <header class="top">
-        <img src="images/self-protrait1.webp" alt="self-protrait1" width="120" height="auto">
-        <span>Christine Chu</span>
-
+    <header>
         
+        <img src="images/logo1.svg" alt="site logo" width="50" height="50">
+        <span>Christine's Site</span>
+        
+        <button id="ham-btn" class="hamburger"></button>    <!--place entity in css-->
+
+
     </header>
 
-    <nav>
-
-        <a href="index.html">Home</a>
-        <a href="#">Chamber</a>
-        <a href="#">Final</a>
-        <a href="#">GitHub Profile</a>
-        <a href="#">LinkedIn</a>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>            
     </nav>
+
+
+
+
 
     <main>
         <h1>Home</h1>
         <div class="container">
             <section class="card">
-                <h2>Course Work</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi facere nihil voluptates.
+                    Tempora perferendis facere corporis. Recusandae eius, nobis exercitationem laudantium assumenda
+                    tenetur maxime delectus. Assumenda odio nesciunt molestiae atque numquam nihil tenetur? Sequi quis
+                    aut a impedit! Eaque! ipsum dolor sit amet consectetur, adipisicing elit. Dicta ullam pariatur nihil
+                    quia quibusdam libero? Accusamus ullam nisi necessitatibus labore nam aut vel cum cumque atque.
+                    Ullam cum est sit!</p>
             </section>
 
             <section class="card">
-                <h2>Hong Kong, China</h2>
-                <img src="images/HongKong.webp" alt="HongKong">
+                <h2>Student Photo</h2>
+                <img src="images/self-protrait1.jpg" alt="self-protrait1">
+
             </section>
         </div>
         <section class="card">
             <h2>Web and Computer Programming Certificate</h2>
             <div id="filters">
                 <button id="allbtn">All Courses</button>
-                <button id="wddbtn">WDD Courses</button>
                 <button id="csebtn">CSE Courses</button>
+                <button id="wddbtn">WDD Courses</button>
             </div>
 
             <div id="class-container">
@@ -70,7 +80,13 @@
     </main>
 </body>
 
-<footer class="footer">
+<footer>
+    <div class="social">
+        <a href="#" target="_blank"><img src="images/github.svg" alt="github logo"></a>
+        <a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo"></a>
+        <a href="#" target="_blank"><img src="images/microsoft-teams.svg" alt="microsoft-teams logo"></a>
+        <a href="#" target="_blank"><img src="images/instagram.svg" alt="instagram logo"></a>
+    </div>
     <p>©<span id="currentyear"></span>🌾Christine Chu🌾 Hong Kong, China</p>
     <p>Last Update: <span id="lastModified"></span></p>
 </footer>

@@ -1,20 +1,45 @@
-@media screen and (min-width: 401px){
+@media screen and (min-width: 721px){
+    header, main, nav, footer {      /*won't keep stretching on wide screen*/
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {
+            display: grid;
+            grid-template-columns: 40px auto;    /*remove the 3rd column, won't show ham btn at all */
+            align-items: center;
+            padding: 10px;
+            gap: 0.75rem;
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+    .hamburger {
+        display: none;
+    }
+
+
     
-    nav {
-        display: flex;
-        justify-content: space-between;
+    .navigation {
+        width: 100%;
+        display: block;
+        
         margin-top: 0;
-        background-color: var(--secondary-color);
+        
         padding: 25px;
 
     }
 
+    .navigation ul {
+        display: flex;
+    }
     .container {
         display: grid;
         grid-template-columns: 2.5fr 1.5fr;
     }
 
-    
+    .card {
+        box-shadow: 1px 1px 10px black;
+    }
 
     .card h2 {
         background-color: var(--primary-color);
