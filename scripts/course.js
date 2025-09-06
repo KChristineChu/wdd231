@@ -78,5 +78,30 @@ const courses = [
     }
 ]
 
-const container = document.getElementById("course-container");
-const filterButtons = document.querySelectorAll("#filters button");
+createCourseList();
+const allCourseList = document.querySelector("#allbtn");
+
+allCourseList.addEventListener("click", () => {
+    let allCourses = courses;
+    createCourseList(allCourses);
+});
+
+
+
+
+const cseCourseList = document.querySelector("csebtn");
+
+cseCourseList.addEventListener("click", () => {
+    let addCseCourse = courses.filter(course => course.subject.includes('CSE'));
+    createCourseList(addCseCourse);
+})
+
+
+const wddCourseList = document.querySelector("#wddbtn");
+
+wddCourseList.addEventListener("click", () => {
+    let addWddCourse = courses.filter(course => course.subject.includes('WDD'));
+    createCourseList(addWddCourse);
+});
+
+//const filterButtons = document.querySelectorAll("#filters button");

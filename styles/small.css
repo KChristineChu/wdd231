@@ -210,7 +210,13 @@ footer {
         border-radius: 5px;
     }
 
-
+#allbtn:hover,
+#wddbtn:hover,
+#csebtn:hover {
+    cursor: pointer;
+    background-color: white;
+    color:var(--accent-color1);
+}
 
     #cse110,
     #wdd130,
@@ -237,3 +243,7 @@ footer {
         border-radius: 5px;
     }
 
+.credits {
+    text-align: center;
+    font-size: .7rem;
+}
