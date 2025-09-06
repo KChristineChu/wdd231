@@ -71,13 +71,12 @@ nav {
 
 .navigation ul {
     list-style-type: none;
-    margin: 0;         /*ul come w/ default margin & padding*/
+    margin: 0;         /*ul come w/ default margin & padding, delete them*/
     padding: 0;
     
 }
 .navigation li {
-    padding: 10
-    px 20px;
+    padding: 10px 20px;
     
 
 
@@ -133,32 +132,63 @@ h1 {
 
 .card img {
     padding: 60px;
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 
+.class-container {
+    display: block;
+}
+
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    margin-top: 0;
     padding: 10px;
     text-align: center;
 }
 
+.credit p {
+    font-size: .8rem;
+    margin-top: 0;
+}
 .social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
     background-color: white;
     margin: 0;
     padding: 0;
 }
 
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
 .social img {
-    width: 40px;
+    width: 22px;
+    height: 22px;
     padding: 10px;
 }
         
-                
-    .container {
-        display: block;
-    }
+.social a:hover {
+    background-color: #ddd;
+}                
+
+.info {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8px;
+}
+.container {
+    display: block;
+}
 
 
     #filters {
@@ -172,15 +202,15 @@ footer {
     #allbtn,
     #wddbtn,
     #csebtn {
-        padding: 10px;
+        padding: 10px 15px;
         background-color: var(--accent-color1);
         color: white;
-        font-size: 1.1rem;
+        font-size: 1rem;
         border-radius: 5px;
     }
 
-    #class-container {
-        display: block;
+    .class-container {
+        
 
     }
 
@@ -190,12 +220,15 @@ footer {
     #cse210,
     #wdd131,
     #wdd231 {
-
+        display: block;               
         background-color: var(--accent-color2);
         color: white;
         font-size: 1.1rem;
-        border-radius: 5px;
-        max-width: max-content;
+        border-radius: 1px;
+        width: 96%;
+
+        padding: 10px 70px;
+            margin: 10px;
     }
 
     .completed {

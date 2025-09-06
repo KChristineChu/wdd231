@@ -17,15 +17,20 @@
         display: none;
     }
 
-
-    
-    .navigation {
+    nav {
         width: 100%;
-        display: block;
+    }
+        
+       
+    
+
+    .navigation {
+        margin-left: 320px;     
+        display: flex;
         
         margin-top: 0;
         
-        padding: 25px;
+        padding: 20px;
 
     }
 
@@ -66,16 +71,14 @@
     #allbtn,
     #wddbtn,
     #csebtn {
-        padding: 10px;
-        background-color: var(--accent-color1);
-        color: white;
+        padding: 10px 20px;
         font-size: 1.1rem;
         border-radius: 5px;    
     }
 
-    #class-container {
-        display: flex;
-        flex-wrap:wrap;
+    .class-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-around;
         padding: 20px;
     }
@@ -86,11 +89,9 @@
     #cse210,
     #wdd131,
     #wdd231 {
-        padding: 10px 40px;
-        background-color: var(--accent-color2);
-        color: white;
-        font-size: 1.1rem;
-        border-radius: 5px;
+        padding: 10px 70px;
+        margin: 10px;
+        
     }
 
     .completed {
