@@ -78,30 +78,34 @@ const courses = [
     }
 ]
 
-createCourseList();
-const allCourseList = document.querySelector("#allbtn");
+const courseList = document.querySelector("#course-list");
 
+function createCourseList() {
+
+}
+
+
+createCourseList(courses);      
+
+const allCourseList = document.querySelector("#allbtn");
 allCourseList.addEventListener("click", () => {
     let allCourses = courses;
     createCourseList(allCourses);
 });
 
 
-
-
-const cseCourseList = document.querySelector("csebtn");
+const cseCourseList = document.querySelector("#csebtn");
 
 cseCourseList.addEventListener("click", () => {
-    let addCseCourse = courses.filter(course => course.subject.includes('CSE'));
-    createCourseList(addCseCourse);
+    let cseCourse = courses.filter(course => course.subject.includes('CSE'));
+    createCourseList(cseCourse);
 })
 
 
 const wddCourseList = document.querySelector("#wddbtn");
 
 wddCourseList.addEventListener("click", () => {
-    let addWddCourse = courses.filter(course => course.subject.includes('WDD'));
-    createCourseList(addWddCourse);
+    let wddCourse = courses.filter(course => course.subject.includes('WDD'));
+    createCourseList(wddCourse);
 });
 
-//const filterButtons = document.querySelectorAll("#filters button");
