@@ -1,4 +1,4 @@
-@media screen and (min-width: 721px){
+@media screen and (min-width: 321px){
     header, main, nav, footer {      /*won't keep stretching on wide screen*/
         max-width: 900px;
         margin: 0 auto;

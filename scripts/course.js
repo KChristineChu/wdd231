@@ -80,12 +80,19 @@ const courses = [
 
 const courseList = document.querySelector("#course-list");
 
-function createCourseList() {
+function createCourseList(coursesArray) {
+    //courseList.innerHTML = '';     //clearing previous content everytime it runs
+    coursesArray.forEach(course => {
+        const classInfo = document.createElement('div');
+        classInfo.classList.add('course');
+        classInfo.classList.add(course.completed ? 'completed' : 'imcompleted');
+        classInfo.innerHTML = `<p>${course.subject} ${course.credits}</p>`;
+        courseList.appendChild(classInfo);
 
+    });
 }
 
-
-createCourseList(courses);      
+createCourseList(courses);
 
 const allCourseList = document.querySelector("#allbtn");
 allCourseList.addEventListener("click", () => {

@@ -235,6 +235,20 @@ footer {
             margin: 10px;
     }
 
+    .course {
+        display: block;
+            background-color: var(--accent-color2);
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 1px;
+            width: 96%;
+        
+            padding: 10px 70px;
+            margin: 10px;
+    }
+    
+
+    
     .completed {
         padding: 10px 40px;
         background-color: lightgray;
